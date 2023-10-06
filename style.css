@@ -1,0 +1,199 @@
+/*ESTILOS GENERALES*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alkatra";
+}
+
+/*BARRA DE NAVEGACION*/
+header {
+  background-color: #CEA6E2; 
+  color: #000000; 
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+nav a {
+  color: #000000; 
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: #ee6ad1; 
+}
+
+@media (max-width: 767px) {
+  header {
+    background-color: #FCE5CD; 
+  }
+  nav {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 1200px;
+  }
+}
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: #FCE5CD; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+li > a {
+  padding: 8px 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #FFB6C1; 
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: #FCE5CD; 
+    width: 100%;
+    height: 100%;
+    top: 40px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+  }
+}
+
+/*FOOTER*/
+footer {
+  background-color: #cdaeff;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  padding: 40px 10px;
+  margin-top: 10px;
+  border: double #616060;
+}
+
+
+.form {
+  font-family: "Raleway";
+  font-size: 40px;
+}
+
+.redes i {
+  color: blueviolet;
+  font-size: 35px;
+}
+
+.redes i:hover {
+  color: #000000;
+}
+
+.cc i {
+  color: blueviolet;
+  font-size: 40px;
+}
+
+.cc i:hover {
+  color: #000000;
+}
+
+h5 {
+  font-family: "Raleway";
+  color: #01ae91;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.subir {
+  position: sticky;
+  font-size: 30px;
+  right: 40px;
+  bottom: 40px;
+  color: #fff;
+  background-color: #845EC2;
+  border-radius: 30%;
+  padding: 15px;
+}
+
+.subir:hover {
+  background-color: #00C9A7;
+}
+
+@media (max-width: 460px) {
+  footer footer {
+      justify-content: center;
+      gap: 15px;
+  }
+}
+
+
+/*ESPACIO PROMO del INDEX*/
+.promo-landing{
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: rgb(243, 197, 197);
+}

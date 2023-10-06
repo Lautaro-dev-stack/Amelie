@@ -1,0 +1,64 @@
+:root{
+    /*navbar promo-grande quienesSomos footer*/
+    --template-index: 0.5fr 1.5fr 1fr 0.5fr / 1fr;
+    --template-pagina-galeria: 0.5fr 3fr 0.5fr / 1fr;
+    --template-galeria: auto / 1fr 1fr 1fr;
+}
+
+/*TEMPLATE PC*/
+/*INDEX*/
+.contenedor-index{
+    padding: 0.5em;
+    display: grid;
+    grid-template: var(--template-index);
+    grid-template-areas:"header-nav"
+                        "promo"       
+                        "promo"        
+                        "promo"
+                        "quienes-somos"
+                        "quienes-somos"
+                        "footer";
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+}
+
+.container-nav{
+    grid-area: header-nav;
+}
+
+.promo-landing{
+    grid-area: promo;
+}
+
+.quienes-somos{
+    grid-area: quienes-somos;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*GALERIA*/
+.contenedor-pagina-galeria{
+    padding: 0.5em;
+    display: grid;
+    grid-template: var(--template-pagina-galeria);
+    grid-template-areas:"header-nav"
+                        "galeria"
+                        "footer";
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;                    
+}
+
+.contenedor-galeria{
+    grid-area: galeria;
+    background-color: rgb(243, 197, 197);
+    padding: 0.5em;
+    display: grid;
+    grid-template: var(--template-galeria);
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+}
