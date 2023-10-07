@@ -2,6 +2,7 @@
     /*navbar promo-grande quienesSomos footer*/
     --template-index: 0.5fr 1.5fr 1fr 0.5fr / 1fr;
     --template-pagina-galeria: 0.25fr 2fr 0.25fr / 1fr;
+    --template-galeria-productos: auto / 1fr 1fr 1fr 1fr; 
     --template-pagina-contacto: 0.1fr 0.2fr 1fr 0.25fr 0.1fr / 1fr;
 }
 
@@ -66,13 +67,14 @@ footer{
 .contenedor-productos{
     padding: 4em 2em;
     flex-grow: 1;
-    display: flex;
+    display: grid;
+    grid-template: var(--template-galeria-productos);
     justify-content: center;
 }
 
 /*TARJETA PRODUCTOS -- GALERIA*/
 .tarjeta{
-    max-width: 15em;
+    max-width: 21em;
     margin: 1em;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
@@ -82,7 +84,7 @@ footer{
 }
 
 .foto-producto{
-    max-height: 20em;
+    max-height: 21em;
     overflow: hidden;
     background: linear-gradient(38deg, #000428, #004e92);
     border-radius: 10px 10px 0 0;

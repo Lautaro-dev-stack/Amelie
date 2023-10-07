@@ -56,3 +56,9 @@ tarjetaProducto('https://www.1999.co.jp/itbig24/10249088.jpg', 'Buzo Caps Corp',
 tarjetaProducto('https://www.1999.co.jp/itbig24/10249088.jpg', 'Buzo Caps Corp', 15000, 'descripción del buzo');
 
 tarjetaProducto('https://www.1999.co.jp/itbig24/10249088.jpg', 'Buzo Caps Corp', 15000, 'descripción del buzo');
+
+tarjetaProducto('https://www.1999.co.jp/itbig24/10249088.jpg', 'Buzo Caps Corp', 15000, 'descripción del buzo');
+
+tarjetaProducto('https://www.1999.co.jp/itbig24/10249088.jpg', 'Buzo Caps Corp', 15000, 'descripción del buzo');
+
+tarjetaProducto('https://www.1999.co.jp/itbig24/10249088.jpg', 'Buzo Caps Corp', 15000, 'descripción del buzo');
