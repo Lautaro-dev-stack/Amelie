@@ -1,68 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <title>Amelie artesanias-home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <title>Amelie Artesanias</title>
+
 </head>
 <body>
-    <div class="contenedor-index">
-        <header>
-            <div class="container-nav">
-                <nav class="navbar">
-                    <a href=" " class="brand">Amelie artesanias</a>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Inicio/home</a></li>
-                        <li><a href="catalogo.html">Catalogo</a></li>
-                        <li><a href="index.html">Preguntas Frecuentes</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <button class="button-menu-toggle">Menu</button>
-            </div>
-        </header>
+    <header>
+        <div class="container-nav">
+            <nav class="navbar">
+              <a href=" " class="brand">Amelie artesanias</a>
+              <ul class="nav-links">
+                <li><a href="index.html">Inicio/home</a></li>
+                <li><a href="index.html">Catalogo</a></li>
+                <li><a href="index.html">Preguntas Frecuentes</a></li>
+                <li><a href="index.html">Contacto</a></li>
+              </ul>
+            </nav>
+            <button class="button-menu-toggle">Menu</button>
+          </div>
+    </header>
+    <script src="script.js"></script>
 
-        <script src="script.js"></script>
-        
-        <div class="promo-landing">
-            <marquee>Aca va la promo</marquee>
-            <div class="promo-container">
-                <picture>
-                    <img src="" id="foto-promo" alt="foto/s promo del mes">
-                </picture>
-            </div>
-        </div>
-        <div class="quienes-somos">
-            <h2>Quienes somos</h2>
-            <p>Texto hablando sobre Amelie</p>
-        </div>
-        
-        <footer>
-            <form action="form">
-                <h5>Suscribe to our Newsletter!</h5>
-                <input type="email" placeholder="type your email">
-                <input type="submit">
-            </form>
-            <div class="redes">
-                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ameliecreacionesartesanales/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="cc">
-                <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
-                <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
-                <a href="#"><i class="fa-brands fa-cc-amex"></i></a>
-            </div>
-            <h5>Amelie Creaciones Artesanales®. Todos los derechos reservados. 2023</h5>
-            <a href="#">Carrito</a>
-            <a href="#" class="subir"><i class="fa-sharp fa-solid fa-chevron-up"></i></a>
-        </footer>
-    </div>    
+
+    <h2> ¡Ofertas de temporada! </h2>
+
+
+  <!-- espacio para el carousel de catalogo -->
+
+  <h2> Somos la Comunidad Amelie y queremos que nos encanta conocerte </h2>
+
+  <!--CARROUSEL  presentación de Amelie -->
+
+<div id="conteitemcarrousel">
+
+  <div class="itemcarrousel" id="itemcarrousel1">
+    <div class= "comentariocarrousel" id="comentariocarrousel1">
+     <img src="./images/resena1.png" alt="resena1">
+    </div>
+    <div class= "flechascarrousel">
+    <a href="#itemcarrousel3">
+      <i class="fa-solid fa-square-caret-left"></i>
+    </a>
+    <a href="#itemcarrousel2">
+      <i class="fa-solid fa-square-caret-right"></i>
+    </a>
+    </div>
+  </div>
+
+  <div class="itemcarrousel" id="itemcarrousel2">
+    <div class= "comentariocarrousel" id="comentariocarrousel2">
+     <img src="./images/resena22.png" alt="resena2">
+     <div class= "flechascarrousel">
+      <a href="#itemcarrousel1">
+        <i class="fa-solid fa-square-caret-left"></i>
+      </a>
+      <a href="#itemcarrousel3">
+        <i class="fa-solid fa-square-caret-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="itemcarrousel" id="itemcarrousel3">
+    <div class= "comentariocarrousel" id="comentariocarrousel3">
+     <img src="./images/resena33.png" alt="resena3">
+    </div>
+    <<div class= "flechascarrousel">
+      <a href="#itemcarrousel2">
+        <i class="fa-solid fa-square-caret-left"></i>
+      </a>
+      <a href="#itemcarrousel1">
+        <i class="fa-solid fa-square-caret-right"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- TERMINA CARROUSEL presentación de Amelie -->
+
+
+<footer>
+  <form action="form">
+      <h5>Suscribe to our Newsletter!</h5>
+      <input type="email" placeholder="type your email">
+      <input type="submit">
+  </form>
+  <div class="redes">
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/ameliecreacionesartesanales/"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <div class="cc">
+      <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+      <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+      <a href="#"><i class="fa-brands fa-cc-amex"></i></a>
+  </div>
+  <h5>Amelie Creaciones Artesanales®. Todos los derechos reservados. 2023</h5>
+  <a href="#">Carrito</a>
+  <a href="#" class="subir"><i class="fa-sharp fa-solid fa-chevron-up"></i></a>
+</footer>
+
+
 </body>
 </html>
