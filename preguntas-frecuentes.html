@@ -11,20 +11,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <title>Amelie Artesanias</title>
-    <!-- VUE 3 -- enlace al cdn 
-        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29"></script> -->
 </head>
 
 <body>
-    <div class="container-info-catalogo">
+    <div class="contenedor-preguntas-frecuentes">
         <header>
             <div class="container-nav">
                 <nav class="navbar">
                     <a href=" " class="brand">Amelie artesanias</a>
                     <ul class="nav-links">
-                        <li><a href="#">Inicio/home</a></li>
+                        <li><a href="index.html">Inicio/home</a></li>
                         <li><a href="catalogo.html">Catalogo</a></li>
-                        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
@@ -34,28 +32,64 @@
 
         <script src="script.js"></script>
 
-        <div class="contenedor-categorias">
-            <div class="navegacion">
-                <div class="gridPromo">
-                        <a href="">Promociones</a>
+        <h3 class="titulo-preguntas-frecuentes">Preguntas Frecuentes</h3>
+        <h4> Somos la Comunidad Amelie y queremos conocerte </h4>
+        <div class="preguntas-frecuentes">
+
+        </div>
+
+        <!-- <h2> ¡Ofertas de temporada! </h2> -->
+        <!-- espacio para el carousel de catalogo -->
+
+        <!--CARROUSEL  presentación de Amelie -->
+
+        
+        <div id="conteitemcarrousel">
+            
+            <div class="itemcarrousel" id="itemcarrousel1">
+                <div class= "comentariocarrousel" id="comentariocarrousel1">
+                    <img class="img-resenia" src="./images/resena1.png" alt="resena1">
                 </div>
-                <div class="gridPorcelana">
-                    <a href="catalogo-productos.html">
-                        <img src="imagenes/porcelana1.jpg.jpeg" alt="Porcelana" id="Imagen1" onmouseover="cambiarImagenAlPasarMouse1(this);">
-                    </a>                          
-                </div>
-                <div class="gridCrochet">
-                    <a href="catalogo-productos.html">
-                        <img src="imagenes/crochet.jpeg" alt="Crochet" onmouseover="cambiarImagenAlPasarMouse2(this);">
+                <div class= "flechascarrousel">
+                    <a href="#itemcarrousel3">
+                        <i class="fa-solid fa-square-caret-left"></i>
+                    </a>
+                    <a href="#itemcarrousel2">
+                        <i class="fa-solid fa-square-caret-right"></i>
                     </a>
                 </div>
-                <div class="gridAcsesorios">
-                    <a href="catalogo-productos.html">
-                        <img src="imagenes/Acsesorio1.png.jpeg" alt="Acsesorios" onmouseover="cambiarImagenAlPasarMouse3(this);">    
+            </div>
+
+            <div class="itemcarrousel" id="itemcarrousel2">
+                <div class= "comentariocarrousel" id="comentariocarrousel2">
+                    <img class="img-resenia" src="./images/resena22.png" alt="resena2">
+                </div>
+                <div class= "flechascarrousel">
+                    <a href="#itemcarrousel1">
+                        <i class="fa-solid fa-square-caret-left"></i>
+                    </a>
+                    <a href="#itemcarrousel3">
+                        <i class="fa-solid fa-square-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="itemcarrousel" id="itemcarrousel3">
+                <div class= "comentariocarrousel" id="comentariocarrousel3">
+                    <img class="img-resenia" src="./images/resena33.png" alt="resena3">
+                </div>
+                <<div class= "flechascarrousel">
+                    <a href="#itemcarrousel2">
+                        <i class="fa-solid fa-square-caret-left"></i>
+                    </a>
+                    <a href="#itemcarrousel1">
+                        <i class="fa-solid fa-square-caret-right"></i>
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- TERMINA CARROUSEL presentación de Amelie -->
 
         <footer>
             <form action="form">

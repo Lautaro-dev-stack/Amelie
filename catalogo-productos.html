@@ -7,21 +7,18 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <title>Amelie Artesanias</title>
-    <!-- VUE 3 -- enlace al cdn 
-        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29"></script> -->
 </head>
 <body>
-    <div class="contenedor-index">
+    <div class="contenedor-pagina-galeria">
         <header>
             <div class="container-nav">
                 <nav class="navbar">
                     <a href=" " class="brand">Amelie artesanias</a>
                     <ul class="nav-links">
-                        <li><a href="#">Inicio/home</a></li>
+                        <li><a href="index.html">Inicio/home</a></li>
                         <li><a href="catalogo.html">Catalogo</a></li>
                         <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
@@ -30,21 +27,16 @@
                 <button class="button-menu-toggle">Menu</button>
             </div>
         </header>
-
         <script src="script.js"></script>
         
-        <div class="promo-landing">
-            <marquee>Aca va la promo</marquee>
-            <div class="promo-container">
-                <picture>
-                    <img src="" id="foto-promo" alt="foto/s promo del mes">
-                </picture>
+        <h2 class="titulo-catalogo">Catalogo</h2>
+
+        <div class="contenedor-galeria">
+            <div class="contenedor-productos">
+
             </div>
         </div>
-        <div class="quienes-somos">
-            <h2>Quienes somos</h2>
-            <p>Texto hablando sobre Amelie</p>
-        </div>
+        <script src="galeriaProductos.js"></script>
         
         <footer>
             <form action="form">
@@ -65,6 +57,6 @@
             <a href="#">Carrito</a>
             <a href="#" class="subir"><i class="fa-sharp fa-solid fa-chevron-up"></i></a>
         </footer>
-    </div>    
+    </div>
 </body>
 </html>
