@@ -198,17 +198,22 @@ h5 {
   background-color: rgb(243, 197, 197);
 }
 
-/*-------CARROUSEL DE PRESENTACION-----------*/
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+
+/*RESEÑAS*/
+
+.titulo_resenas{
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
 }
 
 .itemcarrousel{
   height: 100%;
   position: relative;
+  align-items: center;
+
 }
 
 .comentariocarrousel{
@@ -217,6 +222,7 @@ h5 {
   font-size: 20px;
   display: grid;
   justify-content: center;
+ 
 }
 
 .flechascarrousel{
@@ -228,22 +234,172 @@ h5 {
   display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 20px;
+padding: 30px;
 }
 
 #conteitemcarrousel{
   height: 300px;
   overflow: hidden;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  width: 90%;
+  margin: 100px auto;
+  box-shadow: 0 0 15px -1px rgba(0,0,0,.1);
 }
 
-img {
- display: grid;
- place-items: center;
+.img-resenia {
+  display: flex;
+  place-items: center;
   height: 60%;
-
 }
-
+ 
 i{
   color: #f8a5a5;
   font-size: 25px;
+}
+
+
+/*CATEGORIAS CATALOGO -- landing CATALOGO*/
+.navegacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px solid #e2c5f5;
+  background-color: #e2c5f5;
+  
+}
+/* Estilos para los elementos dentro del grid */
+.gridPromo {
+  grid-area: 1 / 1 / 2 / 3; /* Ocupa toda la primera línea (1-2) y dos columnas (1-3) */
+  background-color: #f9bce5;
+  padding: 10px;
+  text-align: center;
+  border: 10px solid #bfc2ff;
+  display: flex; /* Hacer que el contenedor sea un flex container */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  border-radius: 20px; /*redondeo bordes*/
+}
+
+.gridPorcelana {
+  grid-area: 2 / 1 / 3 / 2; /* Ocupa la segunda línea (2-3) y la primera columna (1-2) */
+  background-color: #faffb6; 
+  text-align: center;
+  border: 10px solid #bfc2ff;
+  display: flex; /* Hacer que el contenedor sea un flex container */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  border-radius: 20px; /*redondeo bordes*/
+}
+
+.gridCrochet {
+  grid-area: 3 / 1 / 4 / 2; /* Ocupa la tercera línea (3-4) y la primera columna (1-2) */
+  background-color: #cdecfd; 
+  padding: 10px;
+  text-align:center;
+  border: 10px solid #bfc2ff;
+  display: flex; /* Hacer que el contenedor sea un flex container */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  border-radius: 20px; /*redondeo bordes*/
+}
+.gridCrochet img:hover{
+  opacity: 60%;
+}
+
+.gridPorcelana img,
+.gridCrochet img {
+  max-width: 60%;
+  align-content: center;
+  /*display: flex; /* Hacer que el contenedor sea un flex container */
+  /*justify-content: center; /* Centrar horizontalmente */
+  /*align-items: center; /* Centrar verticalmente */
+}
+.gridPorcelana img:hover{
+  opacity: 60%;
+}
+
+.gridAcsesorios {
+  grid-area: 2 / 2 / 4 / 3; /* Ocupa la segunda y tercera línea (2-4) y la segunda columna (2-3) */
+  background-color: #f9d5ed; 
+  padding: 10px;
+  text-align: center;
+  border: 10px solid #bfc2ff;
+  display: flex; /* Hacer que el contenedor sea un flex container */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  border-radius: 20px; /*redondeo bordes*/
+
+}
+.gridAcsesorios img:hover{
+  opacity: 60%;
+}
+
+.gridAcsesorios img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Estilos para los elementos Preguntas Frecuentes */
+
+.contenedor_preguntas_frecuentes{
+  width: 90%;
+  margin: 100px auto;
+}
+
+.contenedor_faq{
+  box-shadow: 0 0 15px -1px rgba(0,0,0,.1);
+  padding: 20px;
+}
+
+.contenedor_faq .titulo_faq{
+ text-align: center;
+ font-size: 1.6rem;
+ margin-bottom: 20px;
+}
+
+.contenedor_faq .item_faq{
+ box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
+ margin-bottom: 20px;
+ border-radius: 10px;
+}
+
+.contenedor_faq .item_faq .pregunta{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe4f5;
+  padding: 10px 10px 60px;
+  transition: .4s;
+  font-size: 1.2rem;
+}
+
+.contenedor_faq .item_faq .pregunta .more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px -1px  rgba(0,0,0,.2);
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.contenedor_faq .item_faq .pregunta .more:hover{
+box-shadow: 0 0 15px -1px  rgba(0,0,0,.4);
+}
+
+.contenedor_faq .item_faq .respuesta {
+  position: relative;
+  padding: 0px 20px 0px 40px;
+overflow: hidden;
+height: 0;
+transition: .4s;
+}
+
+.contenedor_faq .item_faq .respuesta p {
+  font-size: 1rem;
 }
