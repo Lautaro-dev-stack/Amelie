@@ -91,29 +91,21 @@ let btndropdown = document.querySelectorAll('.pregunta .more');
 let respuesta = document.querySelectorAll('.respuesta');
 let parrafo = document.querySelectorAll('.respuesta p');
 
-for ( let i = 0; i < btndropdown.length; i ++ ) {
-
-    let altoparrafo = parrafo[i].clientheight;
+for (let i = 0; i < btndropdown.length; i++) {
+    let altoparrafo = parrafo[i].clientHeight;
     let switchc = 0;
 
     btndropdown[i].addEventListener('click', () => {
-
-    if (switchc == 0 ){
-
-        respuesta[i].style.height = '${altoparrafo}px';
-        pregunta[i].style.marginbottom = '10px';
-        btndropdown[i].innerhtml = '<i>-</i>';
-        switchc ++;
-
-    }
-
-    else if (switchc == 1 ){
-
-        respuesta[i].style.height = '0';
-        pregunta[i].style.marginbottom = '0';
-        btndropdown[i].linnerhtml = '<i>+</i>';
-        switchc --;
-    }
-})
-
+        if (switchc == 0) {
+            respuesta[i].style.height = `${altoparrafo}px`;
+            pregunta[i].style.marginBottom = '30px';
+            btndropdown[i].innerHTML = '<i>-</i>';
+            switchc++;
+        } else if (switchc == 1) {
+            respuesta[i].style.height = '0';
+            pregunta[i].style.marginBottom = '0';
+            btndropdown[i].innerHTML = '<i>+</i>';
+            switchc--;
+        }
+    })
 }
