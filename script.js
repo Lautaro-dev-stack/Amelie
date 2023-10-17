@@ -61,8 +61,8 @@ listaDeImagenes2.forEach((imagen) => {
 // Función para cambiar la imagen al pasar el mouse en Acsesorios:
 function cambiarImagenAlPasarMouse3(imagenElemento) {
     const listaDeImagenes3 = [
-        'imagenes/Acsesorio3.png.jpeg',
-        'imagenes/Acsesorio4.png.jpeg',
+        'imagenes/Acsesorio3.png.png',
+        'imagenes/Acsesorio4.png.png',
     ];
 
     // Escoge una imagen diferente al azar

@@ -250,77 +250,180 @@ i{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px solid #e2c5f5;
-  background-color: #e2c5f5;
+  background-color: #d761c3;
   
 }
+
 /* Estilos para los elementos dentro del grid */
 .gridPromo {
   grid-area: 1 / 1 / 2 / 3; /* Ocupa toda la primera línea (1-2) y dos columnas (1-3) */
-  background-color: #f9bce5;
+  background-color: #f7a8db;
   padding: 10px;
   text-align: center;
-  border: 10px solid #bfc2ff;
+  border: 10px solid #bd1cf3;
   display: flex; /* Hacer que el contenedor sea un flex container */
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   border-radius: 20px; /*redondeo bordes*/
+  overflow: hidden; /* Importante para ocultar las imágenes fuera del contenedor */
+  white-space: nowrap; /* Asegura que las imágenes no se envuelvan */
+}
+#marquesina-container {
+  animation: marquesina 10s infinite alternate ease-in-out; /* Configura la animación */
+  white-space: nowrap; /* Asegura que las imágenes no se envuelvan */
 }
 
+#marquesina-container img {
+  max-width: 30%;
+  height: auto;
+  padding: 0%;
+  border-radius: 10px;
+  margin-right: 20px; /*  */
+}
+
+@keyframes marquesina {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-58%); }
+  
+}
 .gridPorcelana {
   grid-area: 2 / 1 / 3 / 2; /* Ocupa la segunda línea (2-3) y la primera columna (1-2) */
-  background-color: #faffb6; 
+  background-color: #e9c6f5; 
+  padding: 0%;
+  position: relative;
   text-align: center;
-  border: 10px solid #bfc2ff;
+  border: 5px solid  #bd1cf3;
   display: flex; /* Hacer que el contenedor sea un flex container */
+  object-fit: cover;
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   border-radius: 20px; /*redondeo bordes*/
 }
-
-.gridCrochet {
-  grid-area: 3 / 1 / 4 / 2; /* Ocupa la tercera línea (3-4) y la primera columna (1-2) */
-  background-color: #cdecfd; 
-  padding: 10px;
-  text-align:center;
-  border: 10px solid #bfc2ff;
-  display: flex; /* Hacer que el contenedor sea un flex container */
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  border-radius: 20px; /*redondeo bordes*/
-}
-.gridCrochet img:hover{
-  opacity: 60%;
+.image-text1 {
+  /* Estilos para el texto que se muestra al pasar el mouse */
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 100%;
+  height: 30%;
+  background: rgba(220, 106, 235, 0.7); /* Fondo semitransparente */
+  display: none; /* Inicialmente oculto */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.gridPorcelana img,
-.gridCrochet img {
-  max-width: 60%;
-  align-content: center;
-  /*display: flex; /* Hacer que el contenedor sea un flex container */
-  /*justify-content: center; /* Centrar horizontalmente */
-  /*align-items: center; /* Centrar verticalmente */
+.gridPorcelana:hover .image-text1 {
+  display: flex; /* Mostrar el texto al pasar el mouse */
+}
+
+.image-text1 p {
+  color: rgb(250, 249, 249);
+  font-size: 200%;
+  font-weight: bold;
+  padding: 0px;
+  font-style: oblique;
 }
 .gridPorcelana img:hover{
   opacity: 60%;
 }
-
-.gridAcsesorios {
-  grid-area: 2 / 2 / 4 / 3; /* Ocupa la segunda y tercera línea (2-4) y la segunda columna (2-3) */
-  background-color: #f9d5ed; 
-  padding: 10px;
+.gridTejidos {
+  grid-area: 3 / 1 / 4 / 2; /* Ocupa la tercera línea (3-4) y la primera columna (1-2) */
+  background-color: #b7eef3; 
+  padding: 0%;
+  position: relative;
   text-align: center;
-  border: 10px solid #bfc2ff;
+  border: 5px solid  #bd1cf3;
   display: flex; /* Hacer que el contenedor sea un flex container */
-  justify-content: center; /* Centrar horizontalmente */
+  object-fit: cover;
+  /*justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   border-radius: 20px; /*redondeo bordes*/
-
 }
-.gridAcsesorios img:hover{
+.image-tejidos {
+  /* Estilos para el texto que se muestra al pasar el mouse */
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 100%;
+  height: 30%;
+  background: rgba(220, 106, 235, 0.7); /* Fondo semitransparente */
+  display: none; /* Inicialmente oculto */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gridTejidos:hover .image-tejidos {
+  display: flex; /* Mostrar el texto al pasar el mouse */
+}
+
+.image-tejidos p {
+  color: rgb(251, 249, 249);
+  font-size: 200%;
+  font-weight: bold;
+  padding: 0px;
+  font-style: oblique;
+}
+.gridTejidos a:hover{
   opacity: 60%;
 }
 
-.gridAcsesorios img {
-  width: 100%;
-  height: auto;
+.gridPorcelana img,
+.gridTejidos img {
+  max-width: 90%;
+  align-content: center;
+  border-radius: 10px;
 }
+.gridAccesorios {
+  grid-area: 2 / 2 / 4 / 3; /* Ocupa la segunda y tercera línea (2-4) y la segunda columna (2-3) */
+  padding: 0%;
+  margin: 0%;
+  background-color: #d891ef; 
+  border: 5px solid #bd1cf3;
+  display: flex; /* Hacer que el contenedor sea un flex container */
+  object-fit: cover;
+  position: relative;
+  text-align: center;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center;
+  border-radius: 20px; /*redondeo bordes*/
+
+}
+.image-accesorios {
+  /* Estilos para el texto que se muestra al pasar el mouse */
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 100%;
+  height: 30%;
+  background: rgba(220, 106, 235, 0.7); /* Fondo semitransparente */
+  display: none; /* Inicialmente oculto */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gridAccesorios:hover .image-accesorios {
+  display: flex; /* Mostrar el texto al pasar el mouse */
+}
+
+.image-accesorios p {
+  color: rgb(255, 255, 255);
+  font-size: 200%;
+  font-weight: bold;
+  padding: 0px;
+  font-style: oblique;
+}
+
+.gridAccesorios img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  
+}
+.gridAccesorios a img:hover{
+  opacity: 60%;
+}
+
+
