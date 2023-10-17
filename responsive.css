@@ -3,7 +3,7 @@
     --template-index: 0.5fr 1.5fr 1fr 0.5fr / 1fr;
 
     /*navbar titulo-catalogo catalogo footer*/
-    --template-pagina-galeria: 0.15fr 0.1fr 2.5fr 0.15fr / 1fr;
+    --template-pagina-galeria: 0.05fr 0.05fr 2.8fr 0.1fr / 1fr;
     /*filas-de-productos columnas*/
     --template-galeria-productos: auto / 1fr 1fr 1fr 1fr; 
     
@@ -82,7 +82,7 @@ footer{
     justify-content: space-evenly;                    
 }
 
-.contenedor-galeria{
+#contenedor-galeria{
     grid-area: galeria;
     background-color: rgb(243, 197, 197);
     padding: 0.5em;
@@ -93,7 +93,7 @@ footer{
     grid-area: titulo-galeria;
 }
 
-.contenedor-productos{
+#contenedor-productos{
     padding: 4em 2em;
     flex-grow: 1;
     display: grid;
