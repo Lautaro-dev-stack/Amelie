@@ -199,8 +199,6 @@ h5 {
 }
 
 
-
-
 /*RESEÑAS*/
 
 .itemcarrousel{
@@ -218,14 +216,14 @@ h5 {
 
 .flechascarrousel{
   background-color: rgb(153, 197, 199, 0,3);
-    position:absolute;
+  position:absolute;
   top: 0;
   height: 100%;
   width: 90%;
   display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 #conteitemcarrousel{
@@ -238,7 +236,7 @@ padding: 20px;
   place-items: center;
   height: 60%;
 }
- 
+
 i{
   color: #f8a5a5;
   font-size: 25px;
@@ -425,5 +423,3 @@ i{
 .gridAccesorios a img:hover{
   opacity: 60%;
 }
-
-

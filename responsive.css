@@ -208,11 +208,68 @@ footer{
     justify-content: space-evenly;
 }
 
-.titulo-preguntas-frecuentes{
+.preguntas-frecuentes{
     grid-area: preguntas-frecuentes;
-
+    width: 90%;
+    margin: 100px auto;
 }
 
 #conteitemcarrousel{
     grid-area: resenias;
+}
+
+.contenedor_faq{
+    box-shadow: 0 0 15px -1px rgba(0,0,0,.1);
+    padding: 20px;
+}
+
+.contenedor_faq .titulo_faq{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.contenedor_faq .item_faq{
+    box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
+    margin-bottom: 20px;
+border-radius: 10px;
+}
+
+.contenedor_faq .item_faq .pregunta{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffe4f5;
+    padding: 10px 10px 60px;
+    transition: .4s;
+    font-size: 1.2rem;
+}
+
+.contenedor_faq .item_faq .pregunta .more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px -1px  rgba(0,0,0,.2);
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.contenedor_faq .item_faq .pregunta .more:hover{
+    box-shadow: 0 0 15px -1px  rgba(0,0,0,.4);
+}
+
+.contenedor_faq .item_faq .respuesta {
+    position: relative;
+    padding: 0px 20px 0px 40px;
+    overflow: hidden;
+    height: 0;
+    transition: .4s;
+}
+
+.contenedor_faq .item_faq .respuesta p {
+    font-size: 1rem;
 }

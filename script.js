@@ -61,8 +61,8 @@ listaDeImagenes2.forEach((imagen) => {
 // Función para cambiar la imagen al pasar el mouse en Acsesorios:
 function cambiarImagenAlPasarMouse3(imagenElemento) {
     const listaDeImagenes3 = [
-        'imagenes/Acsesorio3.png.png',
-        'imagenes/Acsesorio4.png.png',
+        'imagenes/Acsesorio3.png.jpeg',
+        'imagenes/Acsesorio4.png.jpeg',
     ];
 
     // Escoge una imagen diferente al azar
@@ -82,3 +82,30 @@ listaDeImagenes3.forEach((imagen) => {
         cambiarImagenAlPasarMouse3(imagen);
     });
 });
+
+
+// Función para PREGUNTAS FRECUENTES //
+
+let pregunta = document.querySelectorAll('.pregunta');
+let btndropdown = document.querySelectorAll('.pregunta .more');
+let respuesta = document.querySelectorAll('.respuesta');
+let parrafo = document.querySelectorAll('.respuesta p');
+
+for (let i = 0; i < btndropdown.length; i++) {
+    let altoparrafo = parrafo[i].clientHeight;
+    let switchc = 0;
+
+    btndropdown[i].addEventListener('click', () => {
+        if (switchc == 0) {
+            respuesta[i].style.height = `${altoparrafo}px`;
+            pregunta[i].style.marginBottom = '30px';
+            btndropdown[i].innerHTML = '<i>-</i>';
+            switchc++;
+        } else if (switchc == 1) {
+            respuesta[i].style.height = '0';
+            pregunta[i].style.marginBottom = '0';
+            btndropdown[i].innerHTML = '<i>+</i>';
+            switchc--;
+        }
+    });
+}
