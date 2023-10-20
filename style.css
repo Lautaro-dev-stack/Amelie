@@ -166,6 +166,11 @@ h5 {
   color: #01ae91;
   font-size: smaller;
   font-weight: bold;
+  margin-bottom: 0.75em;
+}
+
+.redes-footer{
+  margin-bottom: 0.25em;
 }
 
 .subir {
