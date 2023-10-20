@@ -1,0 +1,281 @@
+:root{
+    /*navbar promo-grande quienesSomos footer*/
+    --template-index: 0.5fr 1.5fr 1fr 0.5fr / 1fr;
+
+    /*navbar titulo-catalogo catalogo footer*/
+    --template-pagina-galeria: 0.05fr 0.05fr 2.8fr 0.1fr / 1fr;
+    /*filas-de-productos columnas*/
+    --template-galeria-productos: auto / 1fr 1fr 1fr 1fr; 
+    
+    /*navbar opciones-catalogo footer*/
+    --template-catalogo: 0.25fr 3.5fr 0.1fr / 1fr; 
+
+    /*navbar formulario publicidad footer*/
+    --template-pagina-contacto: 0.1fr 1.5fr 1fr 0.1fr / 1fr;
+
+    /*navbar preguntas-frecuentes reseñas footer*/
+    --template-pagina-preguntas-frecuentes: 0.1fr 1.5fr 0.5fr 0.1fr / 1fr;
+}
+
+/*TEMPLATE PC*/
+/*INDEX*/
+.contenedor-index{
+    padding: 0.5em;
+    display: grid;
+    grid-template: var(--template-index);
+    grid-template-areas:"header-nav"
+                        "promo"       
+                        "promo"        
+                        "promo"
+                        "quienes-somos"
+                        "quienes-somos"
+                        "footer";
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+}
+
+.container-nav{
+    grid-area: header-nav;
+}
+
+.promo-landing{
+    grid-area: promo;
+}
+
+.quienes-somos{
+    grid-area: quienes-somos;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*CATALOGO INDEX -- landing con las categorias del catalogo*/
+.container-info-catalogo{
+    padding: 0.5em;
+    display: grid;
+    grid-template: var(--template-catalogo);
+    grid-template-areas:"header-nav"
+                        "categorias"
+                        "categorias"
+                        "categorias"
+                        "categorias"
+                        "footer";
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+}
+
+.contenedor-categorias{
+    grid-area: categorias;
+}
+
+/*GALERIA*/
+.contenedor-pagina-galeria{
+    padding: 0.5em;
+    display: grid;
+    grid-template: var(--template-pagina-galeria);
+    grid-template-areas:"header-nav"
+                        "titulo-galeria"
+                        "galeria"
+                        "galeria"
+                        "footer";
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;                    
+}
+
+#contenedor-galeria{
+    grid-area: galeria;
+    background-color: rgb(243, 197, 197);
+    padding: 0.5em;
+    justify-content: space-evenly;
+}
+
+.titulo-catalogo{
+    grid-area: titulo-galeria;
+}
+
+#contenedor-productos{
+    padding: 4em 2em;
+    flex-grow: 1;
+    display: grid;
+    grid-template: var(--template-galeria-productos);
+    justify-content: center;
+}
+/*media query para el template de la galeria de productos*/
+/*TARJETA PRODUCTOS -- GALERIA*/
+.tarjeta{
+    max-width: 21em;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 16px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-producto{
+    max-height: 21em;
+    overflow: hidden;
+    background: linear-gradient(38deg, #000428, #004e92);
+    border-radius: 10px 10px 0 0;
+}
+
+.foto-producto img{
+    height: 100%;
+    width: 100%;
+    /*opacity: 0.4;
+    filter: grayscale(100%);*/
+}
+
+.descripcion-producto{
+    padding: 1em 1em 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera {
+    border-bottom: 1px solid rgba(0, 78, 146, 0.2);
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+
+.precio {
+    margin: 0;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+.detalle {
+    /*font-size: 0.75em;*/
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/*CONTACTO*/
+.contenedor-pagina-contacto{
+    padding: 0.5em;
+    display: grid;
+    grid-template: var(--template-pagina-contacto);
+    grid-template-areas:"header-nav"
+                        "formulario"
+                        "formulario"
+                        "publicidad"
+                        "footer";
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;                    
+    
+}
+
+.contenedor-formulario-contacto{
+    grid-area: formulario;
+    background-color: rgb(243, 197, 197);
+    padding: 0.5em;
+    display: grid;
+    grid-template: var(--template-galeria);
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+}
+
+.contenedor-info-contacto{
+    display: flex;
+    justify-content: space-around;
+    /*flex-wrap: wrap;*/
+}
+
+.publicidad{
+    grid-area: publicidad;
+}
+
+
+/*PREGUNTAS FRECUENTES y RESEÑAS*/
+.contenedor-preguntas-frecuentes{
+    grid-template: var(--template-pagina-preguntas-frecuentes);
+    grid-area:  "header-navbar"
+                "preguntas-frecuentes"
+                "preguntas-frecuentes"
+                "resenias"
+                "footer";
+    background-color: rgb(243, 197, 197);
+    padding: 0.5em;
+    grid-auto-rows: minmax(0,1fr);
+    grid-auto-flow: dense;
+    justify-content: space-evenly;
+}
+
+.preguntas-frecuentes{
+    grid-area: preguntas-frecuentes;
+    width: 90%;
+    margin: 100px auto;
+}
+
+#conteitemcarrousel{
+    grid-area: resenias;
+}
+
+.contenedor_faq{
+    box-shadow: 0 0 15px -1px rgba(0,0,0,.1);
+    padding: 20px;
+}
+
+.contenedor_faq .titulo_faq{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.contenedor_faq .item_faq{
+    box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
+    margin-bottom: 20px;
+border-radius: 10px;
+}
+
+.contenedor_faq .item_faq .pregunta{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffe4f5;
+    padding: 10px 10px 60px;
+    transition: .4s;
+    font-size: 1.2rem;
+}
+
+.contenedor_faq .item_faq .pregunta .more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px -1px  rgba(0,0,0,.2);
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.contenedor_faq .item_faq .pregunta .more:hover{
+    box-shadow: 0 0 15px -1px  rgba(0,0,0,.4);
+}
+
+.contenedor_faq .item_faq .respuesta {
+    position: relative;
+    padding: 0px 20px 0px 40px;
+    overflow: hidden;
+    height: 0;
+    transition: .4s;
+}
+
+.contenedor_faq .item_faq .respuesta p {
+    font-size: 1rem;
+}
