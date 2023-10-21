@@ -2,12 +2,13 @@ let formulario = document.querySelector("#formulario-contacto");
 
 //Coleccion -> elementos del formulario
 let elementos = formulario.elements;
-console.log(elementos);
+//console.log(elementos);
 
 function validarForm(e){
     validarNombre(e);
     validarEmail(e);
     validarCheckbox(e);
+    document.formulario.submit();
 }
 
 
