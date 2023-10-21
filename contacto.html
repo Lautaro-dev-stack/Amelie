@@ -13,7 +13,6 @@
     <title>Amelie Artesanias</title>
 </head>
 <body>
-    <script src="script.js"></script>
 
     <div class="contenedor-pagina-contacto">
         <header>
@@ -30,12 +29,12 @@
                 <button class="button-menu-toggle">Menu</button>
             </div>
         </header>
-
+        <script src="script.js"></script>
         <div class="contenedor-formulario-contacto">
             <div class="container p-2">
                 <h1 id="title" class="text-center">Contacto </h1>
                 <p id="description" class="text-center">Queremos escuchar tus consultas o sugerencias</p>
-                <form id="survey-form" class="p-5 m-3"action="">
+                <form id="formulario-contacto" class="p-5 m-3"action="">
                     <div class="contenedor-info-contacto">
                         <label for="example-input-name" class="form-label" id="name-label">Nombre</label>
                         <input type="text" name="nombre" id="name" class="form-control" placeholder="Ingrese su nombre completo" required>
@@ -45,15 +44,15 @@
                         
                     <div class="form-label pt-3 mt-2">¿Cuál es tu categoría favorita?:
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="checkResult" value="porcelana-fria">
+                            <input class="form-check-input" type="checkbox" name="checkPreference" value="porcelana-fria">
                             <label class="form-check-label" for="checkOption1">Porcelana fría</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="checkResult" value="tejidos">
+                            <input class="form-check-input" type="checkbox" name="checkPreference" value="tejidos">
                             <label class="form-check-label" for="checkOption2">Tejidos</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="checkResult" value="artesanias">
+                            <input class="form-check-input" type="checkbox" name="checkPreference" value="artesanias">
                             <label class="form-check-label" for="checkOption3">Artesanias</label>
                         </div>
                     </div>
@@ -63,7 +62,7 @@
                     </div>
         
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit" id="submit">Enviar</button>
+                        <button class="btn btn-primary" type="submit" id="submit" onclick="validarForm()">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -90,9 +89,10 @@
                 <a href="#"><i class="fa-brands fa-cc-amex"></i></a>
             </div>
             <h5>Amelie Creaciones Artesanales®. Todos los derechos reservados. 2023</h5>
-            <a href="#">Carrito</a>
+            <img src="./logo/logo sin fondo.svg" alt="" width="12%">
             <a href="#" class="subir"><i class="fa-sharp fa-solid fa-chevron-up"></i></a>
         </footer>
     </div>
+    <script src="validacion-formulario.js"></script>
 </body>
 </html>
