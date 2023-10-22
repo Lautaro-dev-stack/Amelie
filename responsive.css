@@ -58,18 +58,13 @@ footer{
     grid-template: var(--template-catalogo);
     grid-template-areas:"header-nav"
                         "categorias"
-                        "categorias"
-                        "categorias"
-                        "categorias"
                         "footer";
     grid-auto-rows: minmax(0,1fr);
     grid-auto-flow: dense;
     justify-content: space-evenly;
 }
 
-.contenedor-categorias{
-    grid-area: categorias;
-}
+
 
 /*GALERIA*/
 .contenedor-pagina-galeria{

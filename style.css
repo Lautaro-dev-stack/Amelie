@@ -278,13 +278,19 @@ i{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 10px solid #e2c5f5;
-  background-color: #d761c3;
+  background-color: #FCE5CD;
 }
 
 /* Estilos para los elementos dentro del grid */
+body {
+  font-family: 'Alkatra', sans-serif;
+}
+.container-info-catalogo{
+  background-color: #FCE5CD;
+}
 .gridPromo {
   grid-area: 1 / 1 / 2 / 3; /* Ocupa toda la primera línea (1-2) y dos columnas (1-3) */
-  background-color: #f7a8db;
+  background-color:#CEA6E2;
   padding: 10px;
   text-align: center;
   border: 10px solid #bd1cf3;
@@ -333,7 +339,7 @@ i{
   left: 0%;
   width: 100%;
   height: 30%;
-  background: rgba(220, 106, 235, 0.7); /* Fondo semitransparente */
+  background: rgba(220, 106, 235, 0.8); /* Fondo semitransparente */
   display: none; /* Inicialmente oculto */
   justify-content: center;
   align-items: center;
@@ -374,7 +380,7 @@ i{
   left: 0%;
   width: 100%;
   height: 30%;
-  background: rgba(220, 106, 235, 0.7); /* Fondo semitransparente */
+  background: rgba(220, 106, 235, 0.8); /* Fondo semitransparente */
   display: none; /* Inicialmente oculto */
   justify-content: center;
   align-items: center;
@@ -398,7 +404,7 @@ i{
 
 .gridPorcelana img,
 .gridTejidos img {
-  max-width: 90%;
+  width: 50%;
   align-content: center;
   border-radius: 10px;
 }
@@ -444,8 +450,8 @@ i{
 }
 
 .gridAccesorios img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: auto;
   border-radius: 20px;
   
 }
