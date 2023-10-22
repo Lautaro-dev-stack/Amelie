@@ -186,9 +186,9 @@ h5 {
 
 .subir {
   position: sticky;
-  font-size: 30px;
+  font-size: 20px;
   right: 40px;
-  bottom: 40px;
+  bottom: 30px;
   color: #fff;
   background-color: var(--verde-jungle)/*#845EC2*/;
   border-radius: 30%;
@@ -202,6 +202,7 @@ h5 {
 @media (max-width: 460px) {
   footer footer {
       justify-content: center;
+      display: flexbox;
       gap: 15px;
   }
 }

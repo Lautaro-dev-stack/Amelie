@@ -65,6 +65,28 @@ footer{
     grid-auto-flow: dense;
     justify-content: space-evenly;
 }
+/*@media para main de catálogo landing*/
+@media (max-width: 1200px) {
+    #container-info-catalogo{
+        grid-template: var(--template-galeria-productos-tablet);
+    }
+
+    .gridPromo{
+        max-width: auto;
+    }
+}
+
+@media (max-width: 720px){
+    #ontainer-info-catalogo{
+        grid-template: var(--template-galeria-productos-mobile);
+    }
+
+   .gridPromo{
+        max-width: auto;
+    }
+}
+
+
 /*
 .contenedor-categorias{
     grid-area: categorias;
