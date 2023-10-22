@@ -3,14 +3,14 @@
     --template-index: 0.25fr 1.5fr 0.5fr 0.1fr / 1fr;
 
     /*navbar titulo-catalogo catalogo footer*/
-    --template-pagina-galeria: 0.05fr 0.05fr 2.8fr 0.1fr / 1fr;
+    --template-pagina-galeria: 0.1fr 0.05fr 2.8fr 0.1fr / 1fr;
     /*filas-de-productos columnas*/
     --template-galeria-productos: auto / 1fr 1fr 1fr 1fr; 
     --template-galeria-productos-tablet: auto / 1fr 1fr;
     --template-galeria-productos-mobile: auto / 1fr;
     
     /*navbar opciones-catalogo footer*/
-    --template-catalogo: 0.25fr 3.5fr 0.1fr / 1fr; 
+    --template-catalogo: 0.1fr 1.5fr 0.1fr / 1fr; 
 
     /*navbar formulario publicidad footer*/
     --template-pagina-contacto: 0.1fr 1.5fr 1fr 0.1fr / 1fr;
@@ -60,18 +60,16 @@ footer{
     grid-template: var(--template-catalogo);
     grid-template-areas:"header-nav"
                         "categorias"
-                        "categorias"
-                        "categorias"
-                        "categorias"
                         "footer";
     grid-auto-rows: minmax(0,1fr);
     grid-auto-flow: dense;
     justify-content: space-evenly;
 }
-
+/*
 .contenedor-categorias{
     grid-area: categorias;
 }
+*/
 
 /*GALERIA*/
 .contenedor-pagina-galeria{

@@ -174,7 +174,7 @@ footer {
 
 h5 {
   font-family: "Raleway";
-  color: #01ae91;
+  color: var(--verde-jungle);
   font-size: smaller;
   font-weight: bold;
   margin-bottom: 0.75em;
@@ -190,13 +190,13 @@ h5 {
   right: 40px;
   bottom: 40px;
   color: #fff;
-  background-color: #845EC2;
+  background-color: var(--verde-jungle)/*#845EC2*/;
   border-radius: 30%;
   padding: 15px;
 }
 
 .subir:hover {
-  background-color: #00C9A7;
+  background-color: var(--celeste)/*#00C9A7*/;
 }
 
 @media (max-width: 460px) {
@@ -278,8 +278,9 @@ i{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  gap: 10px solid #e2c5f5;
-  background-color: #d761c3;
+  padding: 1em;
+  gap: 10px /*solid #e2c5f5*/;
+  background-color: var(--blanco-antique)/*#d761c3*/;
 }
 
 /* Estilos para los elementos dentro del grid */
@@ -399,7 +400,7 @@ i{
 
 .gridPorcelana img,
 .gridTejidos img {
-  max-width: 90%;
+  width: 50%;
   align-content: center;
   border-radius: 10px;
 }
@@ -445,8 +446,8 @@ i{
 }
 
 .gridAccesorios img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: auto;
   border-radius: 20px;
   
 }

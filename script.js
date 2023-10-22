@@ -36,9 +36,9 @@ listaDeImagenes.forEach((imagen) => {
 // Función para cambiar la imagen al pasar el mouse en tejidos:
 function cambiarImagenAlPasarMouse2(imagenElemento) {
     const listaDeImagenes2 = [
-        'imagenes/crochet1.jpeg',
-        'imagenes/crochet2.jpeg',
-        'imagenes/crochet.jpeg'
+        'imagenes/tejidos2.jpg',
+        'imagenes/tejidos3.jpg',
+        'imagenes/crochet2.jpg'
     ];
 
     // Escoge una imagen diferente al azar
@@ -61,8 +61,8 @@ listaDeImagenes2.forEach((imagen) => {
 // Función para cambiar la imagen al pasar el mouse en Acsesorios:
 function cambiarImagenAlPasarMouse3(imagenElemento) {
     const listaDeImagenes3 = [
-        'imagenes/Acsesorio3.png.jpeg',
-        'imagenes/Acsesorio4.png.jpeg',
+        'imagenes/Acsesorios5.jpg',
+        'imagenes/Acsesorios6.jpg'
     ];
 
     // Escoge una imagen diferente al azar
