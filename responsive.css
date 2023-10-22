@@ -1,11 +1,13 @@
 :root{
     /*navbar promo-grande quienesSomos footer*/
-    --template-index: 0.5fr 1.5fr 1fr 0.5fr / 1fr;
+    --template-index: 0.25fr 1.5fr 0.5fr 0.1fr / 1fr;
 
     /*navbar titulo-catalogo catalogo footer*/
     --template-pagina-galeria: 0.05fr 0.05fr 2.8fr 0.1fr / 1fr;
     /*filas-de-productos columnas*/
     --template-galeria-productos: auto / 1fr 1fr 1fr 1fr; 
+    --template-galeria-productos-tablet: auto / 1fr 1fr;
+    --template-galeria-productos-mobile: auto / 1fr;
     
     /*navbar opciones-catalogo footer*/
     --template-catalogo: 0.25fr 3.5fr 0.1fr / 1fr; 
@@ -25,9 +27,7 @@
     grid-template: var(--template-index);
     grid-template-areas:"header-nav"
                         "promo"       
-                        "promo"        
                         "promo"
-                        "quienes-somos"
                         "quienes-somos"
                         "footer";
     grid-auto-rows: minmax(0,1fr);
@@ -45,6 +45,8 @@
 
 .quienes-somos{
     grid-area: quienes-somos;
+    padding: 1em;
+    margin: 1em 0;
 }
 
 footer{
@@ -80,6 +82,7 @@ footer{
                         "titulo-galeria"
                         "galeria"
                         "galeria"
+                        "galeria"
                         "footer";
     grid-auto-rows: minmax(0,1fr);
     grid-auto-flow: dense;
@@ -105,6 +108,36 @@ footer{
     justify-content: center;
 }
 /*media query para el template de la galeria de productos*/
+@media (max-width: 1200px) {
+    #contenedor-productos{
+        grid-template: var(--template-galeria-productos-tablet);
+    }
+
+    .tarjeta{
+        max-width: 15em;
+        margin: 0.8em;
+    }
+
+    .foto-producto{
+        max-width: auto;
+    }
+}
+
+@media (max-width: 720px){
+    #contenedor-productos{
+        grid-template: var(--template-galeria-productos-mobile);
+    }
+
+    .tarjeta{
+        max-width: 11em;
+        margin: 0.6em;
+        border-radius: 7px;
+    }
+
+    .foto-producto{
+        max-width: auto;
+    }
+}
 /*TARJETA PRODUCTOS -- GALERIA*/
 .tarjeta{
     max-width: 21em;
@@ -217,7 +250,7 @@ footer{
 .preguntas-frecuentes{
     grid-area: preguntas-frecuentes;
     width: 90%;
-    margin: 100px auto;
+    margin: 100px ;
 }
 
 #conteitemcarrousel{
@@ -237,8 +270,8 @@ footer{
 
 .contenedor_faq .item_faq{
     box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
-    margin-bottom: 20px;
-border-radius: 10px;
+    /*margin-bottom: 20px;*/
+    border-radius: 10px;
 }
 
 .contenedor_faq .item_faq .pregunta{

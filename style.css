@@ -6,6 +6,7 @@
   --celeste: #B7EEF3;
   --blanco-antique: #FCE5CD;
   --purpura-electric: #BD1CF3;
+  --color-link: #FFB6C1;
 }
 
 /*ESTILOS GENERALES*/
@@ -13,12 +14,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Alkatra";
+  font-family: 'Alkatra', sans-serif;
 }
 
 /*BARRA DE NAVEGACION*/
 header {
-  background-color: #CEA6E2; 
+  background-color: var(--lila-wisteria); 
   color: #000000; 
   text-align: center;
   padding: 20px;
@@ -42,12 +43,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #ee6ad1; 
+  color: var(--rosa-pink); 
 }
 
 @media (max-width: 767px) {
   header {
-    background-color: #FCE5CD; 
+    background-color: var(--blanco-antique); 
   }
   nav {
     font-size: 20px;
@@ -64,7 +65,7 @@ nav a:hover {
   display: flex;
   padding: 10px;
   height: 50px;
-  background-color: #FCE5CD; 
+  background-color: var(--blanco-antique); 
 }
 
 .navbar {
@@ -87,7 +88,7 @@ li {
 }
 
 a {
-  color: #FFB6C1; 
+  color: var(--color-link); 
   text-decoration: none;
 }
 
@@ -120,7 +121,7 @@ a {
   .nav-links.nav-links-responsive {
     position: absolute;
     display: flex;
-    background-color: #FCE5CD; 
+    background-color: var(--blanco-antique); 
     width: 100%;
     height: 100%;
     top: 40px;
@@ -135,7 +136,7 @@ a {
 
 /*FOOTER*/
 footer {
-  background-color: #cdaeff;
+  background-color: var(--lila-wisteria)/*#cdaeff*/;
   display: flex;
   /*flex-wrap: wrap;*/
   gap: 10px;
@@ -144,7 +145,7 @@ footer {
   font-size: 20px;
   padding: 40px 10px;
   margin-top: 10px;
-  border: double #616060;
+  border: double var(--purpura-electric)/*#616060*/;
 }
 
 
@@ -154,7 +155,7 @@ footer {
 }
 
 .redes i {
-  color: blueviolet;
+  color: var(--purpura-electric)/*blueviolet*/;
   font-size: 35px;
 }
 
