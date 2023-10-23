@@ -21,7 +21,7 @@
 
 /*TEMPLATE PC*/
 /*INDEX*/
-.contenedor-index{
+/*.contenedor-index{
     padding: 0.5em;
     display: grid;
     grid-template: var(--template-index);
@@ -37,7 +37,8 @@
 
 .container-nav{
     grid-area: header-nav;
-}
+    
+}*/
 
 .promo-landing{
     text-align: center;
@@ -94,7 +95,7 @@ footer{
 }
 */
 
-/*GALERIA*/
+/*GALERIA
 .contenedor-pagina-galeria{
     padding: 0.5em;
     display: grid;
@@ -109,7 +110,7 @@ footer{
     grid-auto-flow: dense;
     justify-content: space-evenly;                    
 }
-
+*/
 #contenedor-galeria{
     grid-area: galeria;
     background-color: rgb(243, 197, 197);
@@ -215,7 +216,7 @@ footer{
     flex-grow: 1;
 }
 
-/*CONTACTO*/
+/*CONTACTO
 .contenedor-pagina-contacto{
     padding: 0.5em;
     display: grid;
@@ -229,7 +230,7 @@ footer{
     grid-auto-flow: dense;
     justify-content: space-evenly;                    
     
-}
+}*/
 
 .contenedor-formulario-contacto{
     grid-area: formulario;
@@ -253,7 +254,7 @@ footer{
 }
 
 
-/*PREGUNTAS FRECUENTES y RESEÑAS*/
+/*PREGUNTAS FRECUENTES y RESEÑAS
 .contenedor-preguntas-frecuentes{
     grid-template: var(--template-pagina-preguntas-frecuentes);
     grid-area:  "header-navbar"
@@ -267,8 +268,9 @@ footer{
     grid-auto-flow: dense;
     justify-content: space-evenly;
 }
-
+*/
 .preguntas-frecuentes{
+    background-color: rgb(243, 197, 197);
     grid-area: preguntas-frecuentes;
     width: 90%;
     margin: 100px ;
